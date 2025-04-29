@@ -1,0 +1,134 @@
+<Products>
+  <Product Id="1">
+    <Name>Laptop</Name>
+    <Category>Electronics</Category>
+    <Price>1200</Price>
+    <Available>true</Available>
+    <Attributes>
+      <Color>Black</Color>
+      <Size>15.6</Size>
+      <Weight>2.5</Weight>
+    </Attributes>
+  </Product>
+  <Product Id="2">
+    <Name>Smartphone</Name>
+    <Category>Electronics</Category>
+    <Price>800</Price>
+    <Available>true</Available>
+    <Attributes>
+      <Color>Silver</Color>
+      <Size>6.7</Size>
+      <Weight>0.2</Weight>
+    </Attributes>
+  </Product>
+  <Product Id="3">
+    <Name>Desk Chair</Name>
+    <Category>Furniture</Category>
+    <Price>150</Price>
+    <Available>false</Available>
+    <Attributes>
+      <Color>Brown</Color>
+      <Material>Leather</Material>
+      <Height>120</Height>
+    </Attributes>
+  </Product>
+  <Product Id="4">
+    <Name>Coffee Mug</Name>
+    <Category>Kitchenware</Category>
+    <Price>15</Price>
+    <Available>true</Available>
+    <Attributes>
+      <Color>White</Color>
+      <Capacity>300ml</Capacity>
+      <Material>Ceramic</Material>
+    </Attributes>
+  </Product>
+  <Product Id="5">
+    <Name>Wireless Headphones</Name>
+    <Category>Electronics</Category>
+    <Price>120</Price>
+    <Available>true</Available>
+    <Attributes>
+      <Color>Blue</Color>
+      <BatteryLife>20h</BatteryLife>
+      <Connectivity>Bluetooth</Connectivity>
+    </Attributes>
+  </Product>
+  <Product Id="6">
+    <Name>Running Shoes</Name>
+    <Category>Sports</Category>
+    <Price>90</Price>
+    <Available>false</Available>
+    <Attributes>
+      <Color>Red</Color>
+      <Size>42</Size>
+      <Material>Synthetic</Material>
+    </Attributes>
+  </Product>
+  <Product Id="7">
+    <Name>Backpack</Name>
+    <Category>Accessories</Category>
+    <Price>45</Price>
+    <Available>true</Available>
+    <Attributes>
+      <Color>Gray</Color>
+      <Capacity>20L</Capacity>
+      <Material>Nylon</Material>
+    </Attributes>
+  </Product>
+  <Product Id="8">
+    <Name>Smartwatch</Name>
+    <Category>Electronics</Category>
+    <Price>250</Price>
+    <Available>true</Available>
+    <Attributes>
+      <Color>Black</Color>
+      <BatteryLife>7 days</BatteryLife>
+      <Features>Heart Rate Monitor, GPS</Features>
+    </Attributes>
+  </Product>
+  <Product Id="9">
+    <Name>Bookshelf</Name>
+    <Category>Furniture</Category>
+    <Price>120</Price>
+    <Available>true</Available>
+    <Attributes>
+      <Color>White</Color>
+      <Material>Wood</Material>
+      <Dimensions>180x80x30cm</Dimensions>
+    </Attributes>
+  </Product>
+  <Product Id="10">
+    <Name>Blender</Name>
+    <Category>Kitchenware</Category>
+    <Price>70</Price>
+    <Available>false</Available>
+    <Attributes>
+      <Color>Stainless Steel</Color>
+      <Power>800W</Power>
+      <Capacity>1.5L</Capacity>
+    </Attributes>
+  </Product>
+  <Product Id="11">
+    <Name>Gaming Mouse</Name>
+    <Category>Electronics</Category>
+    <Price>50</Price>
+    <Available>true</Available>
+    <Attributes>
+      <Color>RGB</Color>
+      <DPI>16000</DPI>
+      <Connectivity>USB</Connectivity>
+    </Attributes>
+  </Product>
+  <Product Id="12">
+    <Name>Yoga Mat</Name>
+    <Category>Sports</Category>
+    <Price>30</Price>
+    <Available>true</Available>
+    <Attributes>
+      <Color>Purple</Color>
+      <Thickness>6mm</Thickness>
+      <Material>TPE</Material>
+    </Attributes>
+  </Product>
+</Products>
