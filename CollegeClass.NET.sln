@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 Base", "02 Base\02 Base.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.5 Calculator1", "02.5 Calculator1\02.5 Calculator1.csproj", "{19C81B67-B384-4830-8DA4-8D29AFE87BB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 Linq, Lambda", "4 - Linq, Lambda\04 Linq, Lambda.csproj", "{49600420-DAA1-476A-91FB-36E4C6E9672F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.5 Books", "04.5 Books\04.5 Books.csproj", "{0EE054CC-CED3-4C38-B47D-E6EBD093D0CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{19C81B67-B384-4830-8DA4-8D29AFE87BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19C81B67-B384-4830-8DA4-8D29AFE87BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19C81B67-B384-4830-8DA4-8D29AFE87BB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49600420-DAA1-476A-91FB-36E4C6E9672F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49600420-DAA1-476A-91FB-36E4C6E9672F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49600420-DAA1-476A-91FB-36E4C6E9672F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49600420-DAA1-476A-91FB-36E4C6E9672F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EE054CC-CED3-4C38-B47D-E6EBD093D0CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE054CC-CED3-4C38-B47D-E6EBD093D0CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE054CC-CED3-4C38-B47D-E6EBD093D0CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE054CC-CED3-4C38-B47D-E6EBD093D0CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
