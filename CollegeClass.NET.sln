@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 Linq, Lambda", "04 Linq,
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.8 XML Catalog", "04.8 XML Catalog\04.8 XML Catalog.csproj", "{B45AF941-D191-41C6-975E-C0705742AD7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05 pg SQL", "05 pg SQL\05 pg SQL.csproj", "{53923BB5-150E-4849-8A02-ADF5E34854FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.5 pg SQL2", "05.5 pg SQL2\05.5 pg SQL2.csproj", "{2E5F8B3B-7A00-4DFE-9BA1-96472D87B1FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{B45AF941-D191-41C6-975E-C0705742AD7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B45AF941-D191-41C6-975E-C0705742AD7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B45AF941-D191-41C6-975E-C0705742AD7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53923BB5-150E-4849-8A02-ADF5E34854FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53923BB5-150E-4849-8A02-ADF5E34854FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53923BB5-150E-4849-8A02-ADF5E34854FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53923BB5-150E-4849-8A02-ADF5E34854FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E5F8B3B-7A00-4DFE-9BA1-96472D87B1FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E5F8B3B-7A00-4DFE-9BA1-96472D87B1FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E5F8B3B-7A00-4DFE-9BA1-96472D87B1FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E5F8B3B-7A00-4DFE-9BA1-96472D87B1FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
