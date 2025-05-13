@@ -1,29 +1,73 @@
 ﻿using System.Collections.Generic;
+using System.Xml.Linq;
 using Microsoft.EntityFrameworkCore;
 
-public class Book
+public class Products
 {
     public int Id { get; set; }
-    public string Title { get; set; }
-    public string Author { get; set; }
-    public string Genre { get; set; }
-    public int PublicationYear { get; set; }
-    public int Pages { get; set; }
-    public bool IsAvalible { get; set; }
-    public int Rating { get; set; }
-    public string Description { get; set; }
+    public string Name { get; set; }
     public int Price { get; set; }
-    public void PrintBook()
+    public int CategoryId { get; set; }
+    public void Print()
     {
-        Console.WriteLine($"{Id}: \"{Title}\" by {Author}");
-        Console.WriteLine($"Genre: {Genre}; Publication Year: {PublicationYear}; Pages Count: {Pages}");
-        Console.WriteLine($"Avalible: {IsAvalible}; Rating: {Rating}/100; Price: {Price}$");
-        Console.WriteLine($"\"{Description}\"\n");
+        Console.WriteLine($"{Id}: {Name}");
+        Console.WriteLine($"{CategoryId}: {Price}$");
     }
 }
+
+public class Categories
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public void Print()
+    {
+        Console.WriteLine($"{Id}: \"{Name}\"");
+    }
+}
+
+public class Orders
+{
+    public int Id { get; set; }
+    public string Date { get; set; }
+    public int CustomerId { get; set; }
+    public string Status { get; set; }
+    public void Print()
+    {
+        Console.WriteLine($"{Id}: {Date} - {CustomerId}: {Status}");
+    }
+}
+
+public class OrderDetails
+{
+    public int Id { get; set; }
+    public int OrderId { get; set; }
+    public int ProductId { get; set; }
+    public int Quanyity { get; set; }
+    public void Print()
+    {
+        Console.WriteLine($"{Id}: {OrderId}: {ProductId}: {Quanyity}");
+    }
+}
+
+public class Customers
+{
+    public int Id { get; set; }
+    public int FirstName { get; set; }
+    public int LastName { get; set; }
+    public int Email { get; set; }
+    public void Print()
+    {
+        Console.WriteLine($"{Id}: {FirstName} {LastName} - {Email}");
+    }
+}
+
 public class AppDbContext : DbContext
 {
-    public DbSet<Book> Books { get; set; }
+    public DbSet<Products> Products { get; set; }
+    public DbSet<Categories> Categories { get; set; }
+    public DbSet<Products> Orders { get; set; }
+    public DbSet<Categories> OrderDetails { get; set; }
+    public DbSet<Products> Customers { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseNpgsql("Host=localhost;Database=postgres;Username=postgres;Password=1234");
@@ -37,58 +81,136 @@ class Program2
         var context = new AppDbContext();
         context.Database.EnsureCreated();
 
-        context.Books.AddRange(
-            new Book
+        context.Products.AddRange(
+            new Product
             {
                 Id = 1,
-                Title = "Phython",
-                Author = "Bullied Nerd",
-                Genre = "Programming",
-                PublicationYear = 19999,
-                Pages = 2,
-                IsAvalible = false,
-                Rating = -228,
-                Description = "LEARN HOW TO SPEAAK PYTHON IN TWO DAYS",
-                Price = -1000
+                Name = "Бесполезный куб из облачного хранилища",
+                Price = 999,
+                CategoryId = 3,
             },
-            new Book
+            new Product
             {
                 Id = 2,
-                Title = "Gore & Flowers",
-                Author = "Lingus Dingus",
-                Genre = "Diary",
-                PublicationYear = 2025,
-                Pages = 4,
-                IsAvalible = true,
-                Rating = 99,
-                Description = "A short but cute story about Lingus Dingus playing with his friends :3 ... and their guts... UwU",
-                Price = 0
+                Name = "Вечная батарейка (работает только когда гремит гром)",
+                Price = 404,
+                CategoryId = 3
             },
-            new Book
+            new Product
             {
                 Id = 3,
-                Title = "A guide to true programmer",
-                Author = "Cool Guy 228 337",
-                Genre = "Programming",
-                PublicationYear = 1989,
-                Pages = 649,
-                IsAvalible = true,
-                Rating = 97,
-                Description = "Ultimate guide to install Archlinux, programm C and Assembly, use jsons on github as a database and never ever touch grass or speak with women",
-                Price = 2500
+                Name = "Курс 'Как стать 10x разработчиком за 24 часа'",
+                Price = -500, // Платят вам за страдания
+                CategoryId = 2
             },
-            new Book
+            new Product
             {
                 Id = 4,
-                Title = "How I realised what the most important thing is...",
-                Author = "Cool Guy 228 337",
-                Genre = "Diary",
-                PublicationYear = 2002,
-                Pages = 11423123,
-                IsAvalible = false,
-                Rating = 72,
-                Description = "In this book I'm goint to tell you how I and why I...",
-                Price = 500
+                Name = "Кофе для программиста 'Syntax Error' (с нотками отладки до рассвета)",
+                Price = 1337,
+                CategoryId = 1
+            }
+        );
+
+        context.Categories.AddRange(
+            new Category
+            {
+                Id = 1,
+                Name = "Еда для тех, кто видел 3am"
+            },
+            new Category
+            {
+                Id = 2,
+                Name = "Цифровые страдания"
+            },
+            new Category
+            {
+                Id = 3,
+                Name = "Физические воплощения багов"
+            },
+            new Category
+            {
+                Id = 4,
+                Name = "NFT-коллекция 'Мемы с совещаний'"
+            }
+        );
+        
+        context.Orders.AddRange(
+            new Order
+            {
+                Id = 1,
+                Date = "2023-12-32",
+                CustomerId = 4,
+                Status = "Застрял в лифте с курьером"
+            },
+            new Order
+            {
+                Id = 2,
+                Date = "1970-01-01",
+                CustomerId = 1,
+                Status = "Доставлено в /dev/null"
+            },
+            new Order
+            {
+                Id = 3,
+                Date = "2024-02-29",
+                CustomerId = 3,
+                Status = "Застрял в лифте с курьером"
+            }
+        );
+        
+        context.OrderDetails.AddRange(
+            new OrderDetail
+            {
+                Id = 1,
+                OrderId = 2,
+                ProductId = 3,
+                Quanyity = 42 // Ответ на главный вопрос
+            },
+            new OrderDetail
+            {
+                Id = 2,
+                OrderId = 1,
+                ProductId = 4,
+                Quanyity = 0xC0FFEE // Шестнадцатеричный кофе
+            },
+            new OrderDetail
+            {
+                Id = 3,
+                OrderId = 3,
+                ProductId = 1,
+                Quanyity = -1 // Бесконечный цикл
+            }
+        );
+        
+        context.Customers.AddRange(
+            new Customer
+            {
+                Id = 1,
+                FirstName = "Иван",
+                LastName = "Дурак",
+                Email = "click.me@example.com"
+            },
+            new Customer
+            {
+                Id = 2,
+                FirstName = "Нано",
+                LastName = "Бот",
+                Email = "beep_boop@ai.mail"
+            },
+            new Customer
+            {
+                Id = 3,
+                FirstName = "Ошибка",
+                LastName = "404",
+                Email = "not_found@void.com"
+            },
+            new Customer
+            {
+                Id = 4,
+                FirstName = "Чак",
+                LastName = "Норис",
+                Email = "roundhouse.kick@sql.injection"
             }
         );
 
