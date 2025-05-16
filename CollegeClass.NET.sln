@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.5 pg SQL2", "05.5 pg SQL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06 Even More SQL TwT", "06 Even More SQL TwT\06 Even More SQL TwT.csproj", "{236D5983-AEFB-4DDF-A461-FF3448E0F25E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09 Classes Practice", "09 Classes Practice\09 Classes Practice.csproj", "{278229AB-7E8C-4262-8336-BE4BACEF6845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.5 Garbage", "09.5 Garbage\09.5 Garbage.csproj", "{E13F60D4-E03A-45FC-9248-72AE031B9262}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{236D5983-AEFB-4DDF-A461-FF3448E0F25E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{236D5983-AEFB-4DDF-A461-FF3448E0F25E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{236D5983-AEFB-4DDF-A461-FF3448E0F25E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{278229AB-7E8C-4262-8336-BE4BACEF6845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{278229AB-7E8C-4262-8336-BE4BACEF6845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{278229AB-7E8C-4262-8336-BE4BACEF6845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{278229AB-7E8C-4262-8336-BE4BACEF6845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E13F60D4-E03A-45FC-9248-72AE031B9262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E13F60D4-E03A-45FC-9248-72AE031B9262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E13F60D4-E03A-45FC-9248-72AE031B9262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E13F60D4-E03A-45FC-9248-72AE031B9262}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
