@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.5 Garbage", "09.5 Garbag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.75 Delegat", "09.75 Delegat\09.75 Delegat.csproj", "{7600CE16-7F76-4043-B623-76E2DD0E5917}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10 Calculator", "10 Calculator\10 Calculator.csproj", "{A2B34EB8-DFFE-4ACB-B090-134A55C69853}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{7600CE16-7F76-4043-B623-76E2DD0E5917}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7600CE16-7F76-4043-B623-76E2DD0E5917}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7600CE16-7F76-4043-B623-76E2DD0E5917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2B34EB8-DFFE-4ACB-B090-134A55C69853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2B34EB8-DFFE-4ACB-B090-134A55C69853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2B34EB8-DFFE-4ACB-B090-134A55C69853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2B34EB8-DFFE-4ACB-B090-134A55C69853}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
